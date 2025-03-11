@@ -1,7 +1,7 @@
 {
   "name": "@mnrendra/rollup-plugin-esbuild",
   "version": "0.0.0-development",
-  "description": "A wrapper for 'rollup-plugin-esbuild' that automatically resolves'.default' exports for CJS and ESM.",
+  "description": "A \"rollup-plugin-esbuild\" with dual exports, allowing consumers to `import` or `require` it without needing to access the `.default` export in both CommonJS and ES Module formats.",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,7 +24,10 @@
     "url": "https://github.com/mnrendra/rollup-plugin-esbuild/issues"
   },
   "homepage": "https://github.com/mnrendra/rollup-plugin-esbuild#readme",
-  "dependencies": {},
+  "dependencies": {
+    "rollup": "^4.34.9",
+    "rollup-plugin-esbuild": "^6.2.1"
+  },
   "devDependencies": {
     "@semantic-release/exec": "^7.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -39,9 +42,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.6.0",
     "jest": "^29.7.0",
-    "rollup": "^4.34.9",
     "rollup-plugin-dts": "^6.1.1",
-    "rollup-plugin-esbuild": "^6.2.1",
     "semantic-release": "^24.2.3",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
