@@ -1,6 +1,6 @@
 {
   "name": "@mnrendra/rollup-plugin-esbuild",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A \"rollup-plugin-esbuild\" with dual exports, allowing consumers to `import` or `require` it without needing to access the `.default` export in both CommonJS and ES Module formats.",
   "private": false,
   "main": "dist/index.js",
